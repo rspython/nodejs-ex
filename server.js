@@ -57,6 +57,8 @@ var initDb = function(callback) {
 };
 
 app.get('/', function (req, res) {
+    console.log(req.headers);
+    console.log(req);
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
